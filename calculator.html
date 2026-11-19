@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Name</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        <input type="text" id="name">
+        <button type="button" onclick="getName()">Get Name</button>
+    </form>
+
+    <p id="getResult">John</p>
+
+    <script>
+        function getName() {
+            let name = document.getElementById("name").value;
+
+            document.getElementById("getResult").innerHTML = name;
+        }
+    </script>
+
+</body>
+</html>
